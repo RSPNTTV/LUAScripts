@@ -79,7 +79,7 @@ function RobloxFirebase:GetFirebase(name, scope)
 		repeat
 			attempts += 1
 			local success, error = pcall(function()
-				responseInfo = HttpService:RequestAsync(request)
+				responseInfo = http.request(request)
 			end)
 			if not success then
 				print("Roblox-Firebase GetAsync failed: " .. tostring(error))
@@ -125,7 +125,7 @@ function RobloxFirebase:GetFirebase(name, scope)
 		requestOptions.Body = encoded
 
 		local success, err = pcall(function() 
-			local response = HttpService:RequestAsync(requestOptions)
+			local response = http.request(requestOptions)
 			if response == nil or not response.Success then
 				warn("Roblox-Firebase SetAsync Operation Failure: " .. response.StatusMessage .. " ("..response.StatusCode..")")
 				if method == "PATCH" then -- UpdateAsync Request
