@@ -242,9 +242,4 @@ function RobloxFirebase:GetFirebase(name, scope)
 end
 
 
-return function(dbUrl, authToken)
-	local self = setmetatable({}, RobloxFirebase)
-	self.DefaultScope = dbUrl
-	self.AuthenticationToken = authToken
-	return self
-end
+return RobloxFirebase
