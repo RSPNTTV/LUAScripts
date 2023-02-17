@@ -1313,7 +1313,9 @@ function module:GetConfig()
 		return DefaultConfig
 	end
 	
-	return ReadConfigArray(DefaultConfig,result)
+	local config = ReadConfigArray(DefaultConfig,result)
+	writefile("config.json", Services["HTTP"]:JSONEncode(config))
+	return config
 end
 
 return module
