@@ -1283,7 +1283,7 @@ function ReadConfigArray(default, compare)
 			if (type(v) == "table") then
 				returnTable[i] = ReadConfigArray(default[i], v)
 			else
-				returnTable[i] = i
+				returnTable[i] = v
 			end
 		elseif (default[i]) then
 			returnTable[i] = default[i]
