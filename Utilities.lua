@@ -1293,7 +1293,7 @@ function ReadConfigArray(default, compare)
 	
 	for i,v in pairs(default) do
 		if not (returnTable[i]) then
-			returnTable[i] = v
+			returnTable[i] = i
 		end
 	end
 	
