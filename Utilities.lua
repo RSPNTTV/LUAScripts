@@ -1270,6 +1270,7 @@ local DefaultConfig = {
 	Settings = {
 		AssetsFilePath = "",
 		Channel = "",
+		SendToWebhook = false,
 		UploadToRealtimeAPI = false,
 		UploadToAPI = false,
 		Weather = false
@@ -1283,7 +1284,7 @@ function ReadConfigArray(default, compare)
 			if (type(v) == "table") then
 				returnTable[i] = ReadConfigArray(default[i], v)
 			else
-				returnTable[i] = v
+				returnTable[i] = i
 			end
 		elseif (default[i]) then
 			returnTable[i] = default[i]
@@ -1313,9 +1314,7 @@ function module:GetConfig()
 		return DefaultConfig
 	end
 	
-	local config = ReadConfigArray(DefaultConfig,result)
-	writefile("config.json", Services["HTTP"]:JSONEncode(config))
-	return config
+	return ReadConfigArray(DefaultConfig,result)
 end
 
 return module
