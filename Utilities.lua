@@ -1287,6 +1287,7 @@ local DefaultConfig = {
 	Settings = {
 		AssetsFilePath = "",
 		AutoTwitchClipping = "false",
+		AutoTwitchUpdates = "false",
 		Channel = "",
 		SendToWebhook = "false",
 		TwitchAuthCode = "",
