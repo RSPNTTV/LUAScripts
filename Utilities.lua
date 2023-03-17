@@ -1265,15 +1265,16 @@ local DefaultConfig = {
 		AwayRank = 0,
 		Home = "HOME_TEAM_HERE",
 		HomeRank = 0,
-		Primetime = false
+		Primetime = "false"
 	},
 	Settings = {
 		AssetsFilePath = "",
+		AutoTwitchClipping = "false",
 		Channel = "",
 		SendToWebhook = "false",
-		UploadToRealtimeAPI = false,
-		UploadToAPI = false,
-		Weather = false
+		TwitchAuthCode = "",
+		UploadToAPI = "false",
+		UploadToRealtimeAPI = "false"
 	}
 }
 function ReadConfigArray(default, compare)
