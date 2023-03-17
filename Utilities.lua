@@ -1241,7 +1241,7 @@ local RSPNChannels = {
 	["RSPN4"] = "875247498",
 	["RSPN_5"] = "875247935",
 	["RSPNDeportes"] = "875248189",
-	["Test"] = "41972502667"
+	["tibb12"] = "41972502667"
 }
 
 function module:GetRSPNChannels()
