@@ -4,7 +4,7 @@ local Services = {
 
 local module = {}
 
-function module:GetTeam(teamName)
+function getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
 			City = "South Carolina",
@@ -31,7 +31,7 @@ function module:GetTeam(teamName)
 					},
 					Away = {
 						NumberInner = "#73000A",
-						NumberStroke = "#000000",
+						NumberStroke = "#FFFFFF",
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
 						Stripe = "#000000",
@@ -67,10 +67,10 @@ function module:GetTeam(teamName)
 					Away = {
 						NumberInner = "#18453B",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#FFFFFF",
+						Helmet = "#18453B",
 						Jersey = "#FFFFFF",
-						Stripe = "#18453B",
-						Pants = "#FFFFFF"
+						Stripe = "#FFFFFF",
+						Pants = "#18453B"
 					}
 				}
 			},
@@ -114,7 +114,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Florida",
 			Name = "Gators",
-			Abbreviation = "UF",
+			Abbreviation = "FLA",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -219,7 +219,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Clemson",
 			Name = "Tigers",
-			Abbreviation = "CU",
+			Abbreviation = "CLEM",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -237,7 +237,7 @@ function module:GetTeam(teamName)
 						Helmet = "#F56600",
 						Jersey = "#F56600",
 						Stripe = "#FFFFFF",
-						Pants = "#F56600"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#F56600",
@@ -289,7 +289,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Oklahoma State",
 			Name = "Cowboys",
-			Abbreviation = "OSU",
+			Abbreviation = "OKST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -315,7 +315,7 @@ function module:GetTeam(teamName)
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
 						Stripe = "#FFFFFF",
-						Pants = "#FFFFFF"
+						Pants = "#FF7300"
 					}
 				}
 			},
@@ -324,7 +324,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Hawaii",
 			Name = "Warriors",
-			Abbreviation = "UH",
+			Abbreviation = "HAW",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -359,7 +359,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Oregon State",
 			Name = "Beavers",
-			Abbreviation = "OSU",
+			Abbreviation = "ORST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -409,18 +409,18 @@ function module:GetTeam(teamName)
 					Home = {
 						NumberInner = "#FFFFFF",
 						NumberStroke = "#BB0000",
-						Helmet = "#666666",
+						Helmet = "#C7C7C7",
 						Jersey = "#BB0000",
 						Stripe = "#FFFFFF",
-						Pants = "#666666"
+						Pants = "#C7C7C7"
 					},
 					Away = {
 						NumberInner = "#BB0000",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#666666",
+						Helmet = "#C7C7C7",
 						Jersey = "#FFFFFF",
 						Stripe = "#BB0000",
-						Pants = "#666666"
+						Pants = "#C7C7C7"
 					}
 				}
 			},
@@ -464,7 +464,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Rutgers",
 			Name = "Scarlet Knights",
-			Abbreviation = "RU",
+			Abbreviation = "RUTG",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -534,7 +534,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Texas",
 			Name = "Longhorns",
-			Abbreviation = "UT",
+			Abbreviation = "TEX",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -569,7 +569,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Cincinnati",
 			Name = "Bearcats",
-			Abbreviation = "UC",
+			Abbreviation = "CINN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -604,7 +604,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Duke",
 			Name = "Blue Devils",
-			Abbreviation = "DU",
+			Abbreviation = "DUKE",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -622,7 +622,7 @@ function module:GetTeam(teamName)
 						Helmet = "#003087",
 						Jersey = "#003087",
 						Stripe = "#FFFFFF",
-						Pants = "#003087"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#003087",
@@ -709,7 +709,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Troy",
 			Name = "Trojans",
-			Abbreviation = "TU",
+			Abbreviation = "TROY",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -779,7 +779,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Tulane",
 			Name = "Green Wave",
-			Abbreviation = "TU",
+			Abbreviation = "TULN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -849,7 +849,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Penn State",
 			Name = "Nittany Lions",
-			Abbreviation = "PSU",
+			Abbreviation = "PENN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -884,7 +884,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Georgia Tech",
 			Name = "Yellow Jackets",
-			Abbreviation = "GIT",
+			Abbreviation = "GT",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -919,7 +919,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "San Diego State",
 			Name = "Aztecs",
-			Abbreviation = "SSU",
+			Abbreviation = "SDSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -954,7 +954,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Mississippi State",
 			Name = "Bulldogs",
-			Abbreviation = "MSU",
+			Abbreviation = "MSST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -989,7 +989,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "UConn",
 			Name = "Huskies",
-			Abbreviation = "UC",
+			Abbreviation = "CONN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1037,12 +1037,12 @@ function module:GetTeam(teamName)
 				},
 				Jersey = {
 					Home = {
-						NumberInner = "#CEB888",
+						NumberInner = "#FFFFFF",
 						NumberStroke = "#CEB888",
 						Helmet = "#CEB888",
 						Jersey = "#782F40",
 						Stripe = "#CEB888",
-						Pants = "#782F40"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#782F40",
@@ -1059,7 +1059,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Kansas",
 			Name = "Jayhawks",
-			Abbreviation = "UK",
+			Abbreviation = "KSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1094,7 +1094,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "Louisville",
 			Name = "Cardinals",
-			Abbreviation = "LU",
+			Abbreviation = "LOU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1129,7 +1129,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "California",
 			Name = "Golden Bears",
-			Abbreviation = "UC",
+			Abbreviation = "CAL",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1164,7 +1164,7 @@ function module:GetTeam(teamName)
 		return {
 			City = "San Jose State",
 			Name = "Spartans",
-			Abbreviation = "SSU",
+			Abbreviation = "SJSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1195,11 +1195,46 @@ function module:GetTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "washington") then
+		return {
+			City = "Washington",
+			Name = "Huskies",
+			Abbreviation = "UW",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#4B2E83",
+					Light = "#6840B8"
+				},
+				Alternate = {
+					Main = "#BAA46C",
+					Light = "#FFE194"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#85754D",
+						Helmet = "#85754D",
+						Jersey = "#4B2E83",
+						Stripe = "#85754D",
+						Pants = "#85754D"
+					},
+					Away = {
+						NumberInner = "#85754D",
+						NumberStroke = "#4B2E83",
+						Helmet = "#85754D",
+						Jersey = "#FFFFFF",
+						Stripe = "#4B2E83",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	elseif (string.lower(teamName) == "arizona") then
 		return {
 			City = "Arizona",
 			Name = "Wildcats",
-			Abbreviation = "AU",
+			Abbreviation = "ARIZ",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1208,7 +1243,7 @@ function module:GetTeam(teamName)
 				},
 				Alternate = {
 					Main = "#820021",
-					Light = "#FFF3C9"
+					Light = "#F5003D"
 				},
 				Jersey = {
 					Home = {
@@ -1229,6 +1264,822 @@ function module:GetTeam(teamName)
 					}
 				}
 			},
+		}
+	elseif (string.lower(teamName) == "maryland") then
+		return {
+			City = "Maryland",
+			Name = "Terrapins",
+			Abbreviation = "UW",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E03A3E",
+					Light = "#FF7577"
+				},
+				Alternate = {
+					Main = "#FFD520",
+					Light = "#FFFEA9"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#FFFFFF",
+						Jersey = "#E03A3E",
+						Stripe = "#000000",
+						Pants = "#E03A3E"
+					},
+					Away = {
+						NumberInner = "#E03A3E",
+						NumberStroke = "#E03A3E",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#E03A3E",
+						Pants = "#E03A3E"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "boise state") then
+		return {
+			City = "Boise State",
+			Name = "Broncos",
+			Abbreviation = "BSU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0033A0",
+					Light = "#0048E3"
+				},
+				Alternate = {
+					Main = "#D64309",
+					Light = "#FF500A"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#D64309",
+						Helmet = "#0033A0",
+						Jersey = "#0033A0",
+						Stripe = "#D64309",
+						Pants = "#0033A0"
+					},
+					Away = {
+						NumberInner = "#0033A0",
+						NumberStroke = "#D64309",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#D64309",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "northwestern") then
+		return {
+			City = "Northwestern",
+			Name = "Wildcats",
+			Abbreviation = "NU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#4E2A84",
+					Light = "#8B4BEB"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#4E2A84",
+						Jersey = "#4E2A84",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#4E2A84",
+						NumberStroke = "#000000",
+						Helmet = "#4E2A84",
+						Jersey = "#FFFFFF",
+						Stripe = "#4E2A84",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "indiana") then
+		return {
+			City = "Indiana",
+			Name = "Hoosiers",
+			Abbreviation = "IU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#990000",
+					Light = "#DB0000"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#990000",
+						Helmet = "#990000",
+						Jersey = "#990000",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#990000",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#990000",
+						Jersey = "#FFFFFF",
+						Stripe = "#990000",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "mizzou") then
+		return {
+			City = "Mizzou",
+			Name = "Tigers",
+			Abbreviation = "MIZZ",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#D6A529",
+					Light = "#FFC430"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#F1B82D",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#000000",
+						Stripe = "#F1B82D",
+						Pants = "#F1B82D"
+					},
+					Away = {
+						NumberInner = "#000000",
+						NumberStroke = "#F1B82D",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#F1B82D",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "south florida") then
+		return {
+			City = "South Florida",
+			Name = "Bulls",
+			Abbreviation = "USF",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#006747",
+					Light = "#008C60"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#CFC493",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#CFC493",
+						Jersey = "#006747",
+						Stripe = "#CFC493",
+						Pants = "#006747"
+					},
+					Away = {
+						NumberInner = "#006747",
+						NumberStroke = "#CFC493",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#006747",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "oregon") then
+		return {
+			City = "Oregon",
+			Name = "Ducks",
+			Abbreviation = "ORE",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#154733",
+					Light = "#247856"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FBE021",
+						NumberStroke = "#FBE021",
+						Helmet = "#154733",
+						Jersey = "#154733",
+						Stripe = "#154733",
+						Pants = "#154733"
+					},
+					Away = {
+						NumberInner = "#5f7803",
+						NumberStroke = "#5f7803",
+						Helmet = "#000000",
+						Jersey = "#000000",
+						Stripe = "#000000",
+						Pants = "#000000"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "minnesota") then
+		return {
+			City = "Minnesota",
+			Name = "Golden Gophers",
+			Abbreviation = "MINN",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#862334",
+					Light = "#BF3249"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFCC33",
+						Helmet = "#FFCC33",
+						Jersey = "#862334",
+						Stripe = "#862334",
+						Pants = "#862334"
+					},
+					Away = {
+						NumberInner = "#862334",
+						NumberStroke = "#FFCC33",
+						Helmet = "#FFCC33",
+						Jersey = "#FFFFFF",
+						Stripe = "#862334",
+						Pants = "#862334"
+					}
+				}
+			},
+		}	
+      elseif (string.lower(teamName) == "baylor") then
+		return {
+			City = "Baylor",
+			Name = "Bears",
+			Abbreviation = "BU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#154734",
+					Light = "#2F9C72"
+				},
+				Alternate = {
+					Main = "#FFB81C",
+					Light = "#FFDE7D"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB81C",
+						NumberStroke = "#000000",
+						Helmet = "#154734",
+						Jersey = "#154734",
+						Stripe = "#FFB81C",
+						Pants = "#154734"
+					},
+					Away = {
+						NumberInner = "#154734",
+						NumberStroke = "#FFB81C",
+						Helmet = "#154734",
+						Jersey = "#FFFFFF",
+						Stripe = "#154734",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+      elseif (string.lower(teamName) == "oregon") then
+		return {
+			City = "Oregon",
+			Name = "Ducks",
+			Abbreviation = "ORE",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#154733",
+					Light = "#008A00"
+				},
+				Alternate = {
+					Main = "#FEE123",
+					Light = "#FFE281"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FEE123",
+						NumberStroke = "#FEE123",
+						Helmet = "#154733",
+						Jersey = "#154733",
+						Stripe = "#154733",
+						Pants = "#154733"
+					},
+					Away = {
+						NumberInner = "#154733",
+						NumberStroke = "#FEE123",
+						Helmet = "#154733",
+						Jersey = "#FFFFFF",
+						Stripe = "#154733",
+						Pants = "#154733"
+					}
+				}
+			},
+		}
+      elseif (string.lower(teamName) == "lsu") then
+		return {
+			City = "Lsu",
+			Name = "Tigers",
+			Abbreviation = "LSU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#461D7C",
+					Light = "#6529B2"
+				},
+				Alternate = {
+					Main = "#CFAB1D",
+					Light = "#FFEF3C"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#CFAB1D",
+						Jersey = "#461D7C",
+						Stripe = "#461D7C",
+						Pants = "#CFAB1D"
+					},
+					Away = {
+						NumberInner = "#461D7C",
+						NumberStroke = "#461D7C",
+						Helmet = "#CFAB1D",
+						Jersey = "#FFFFFF",
+						Stripe = "#461D7C",
+						Pants = "#CFAB1D"
+					}
+				}
+			},
+		}
+      elseif (string.lower(teamName) == "texas a&m") then
+		return {
+			City = "Texas A&M",
+			Name = "Aggies",
+			Abbreviation = "TAMU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#500000",
+					Light = "#660000"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#500000",
+						Helmet = "#500000",
+						Jersey = "#500000",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#500000",
+						NumberStroke = "#500000",
+						Helmet = "#500000",
+						Jersey = "#FFFFFF",
+						Stripe = "#500000",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "georgia") then
+		-- Team:
+		return {
+			City = "Georgia",
+			Name = "Bulldogs",
+			Abbreviation = "UGA",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#BA0C2F",
+					Light = "#FF2B60"
+				},
+				Alternate = {
+					Main = "#2B2B2B",
+					Light = "#575757"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#BA0C2F",
+						Jersey = "#BA0C2F",
+						Stripe = "#000000",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#000000",
+						NumberStroke = "#BA0C2F",
+						Helmet = "#BA0C2F",
+						Jersey = "#FFFFFF",
+						Stripe = "#000000",
+						Pants = "#BA0C2F"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "alabama") then
+		-- Team: Georgia
+		return {
+			City = "Alabama",
+			Name = "Crimson Tide",
+			Abbreviation = "ALA",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#9E1B32",
+					Light = "#E02648"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#9E1B32",
+						Jersey = "#9E1B32",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#9E1B32",
+						NumberStroke = "#333333",
+						Helmet = "#9E1B32",
+						Jersey = "#FFFFFF",
+						Stripe = "#9E1B32",
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "syracuse") then
+		-- Team: Georgia
+		return {
+			City = "Syracuse",
+			Name = "Orange",
+			Abbreviation = "SU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#F76900",
+					Light = "#FF953F"
+				},
+				Alternate = {
+					Main = "#000E54",
+					Light = "#0023D4"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000E54",
+						Helmet = "#FFFFFF",
+						Jersey = "#F76900",
+						Stripe = "#000E54",
+						Pants = "#F76900"
+					},
+					Away = {
+						NumberInner = "#F76900",
+						NumberStroke = "#000E54",
+						Helmet = "#F76900",
+						Jersey = "#FFFFFF",
+						Stripe = "#F76900",
+						Pants = "#000E54"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "illinois") then
+		-- Team: Georgia
+		return {
+			City = "Illinois",
+			Name = "Fighting Illini",
+			Abbreviation = "IL",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E84A27",
+					Light = "#FF7D63"
+				},
+				Alternate = {
+					Main = "#13294B",
+					Light = "#295AA3"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#E84A27",
+						NumberStroke = "#000E54",
+						Helmet = "#E84A27",
+						Jersey = "#13294B",
+						Stripe = "#13294B",
+						Pants = "#E84A27"
+					},
+					Away = {
+						NumberInner = "#E84A27",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#E84A27",
+						Jersey = "#FFFFFF",
+						Stripe = "#E84A27",
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "auburn") then
+		-- Team: Auburn
+		return {
+			City = "Auburn",
+			Name = "Tigers",
+			Abbreviation = "AU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0C2340",
+					Light = "#184780"
+				},
+				Alternate = {
+					Main = "#E87722",
+					Light = "#FFA449"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FFFFFF",
+						Jersey = "#0C2340",
+						Stripe = "#E87722",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#0C2340", 
+						NumberStroke = "#FFA449",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#0C2340", 
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "texas tech") then
+		-- Team: Auburn
+		return {
+			City = "Texas Tech",
+			Name = "Red Raiders",
+			Abbreviation = "TEX",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#CC0000",
+					Light = "#FF4B4E"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#CC0000",
+						Stripe = "#CC0000",
+						Pants = "#000000"
+					},
+					Away = {
+						NumberInner = "#CC0000", 
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#CC0000", 
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "saints") then
+		-- Team: Auburn
+		return {
+			City = "New Orleans",
+			Name = "Saints",
+			Abbreviation = "NO",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#D3BC8D",
+					Light = "#FFEEC8"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFEEC8",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#D3BC8D",
+						Jersey = "#0D0D0D",
+						Stripe = "#0D0D0D",
+						Pants = "#0D0D0D"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#FFEEC8",
+						Helmet = "#D3BC8D",
+						Jersey = "#FFFFFF",
+						Stripe = "#0D0D0D", 
+						Pants = "#0D0D0D"
+					}
+				}
+			}
+		}
+ elseif (string.lower(teamName) == "buccaneers") then
+		-- Team: Auburn
+		return {
+			City = "Tampa Bay",
+			Name = "Buccaneers",
+			Abbreviation = "TB",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#A6192E",
+					Light = "#FF4766"
+				},
+				Alternate = {
+					Main = "#696158",
+					Light = "#B0A394"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#696158",
+						Jersey = "#A6192E",
+						Stripe = "#0D0D0D",
+						Pants = "#696158"
+					},
+					Away = {
+						NumberInner = "#A6192E", 
+						NumberStroke = "#000000",
+						Helmet = "#211F1C",
+						Jersey = "#FFFFFF",
+						Stripe = "#A6192E", 
+						Pants = "#696158"
+					}
+				}
+			}
+		}
+	 elseif (string.lower(teamName) == "panthers") then
+		-- Team: Auburn
+		return {
+			City = "Carolina",
+			Name = "Panthers",
+			Abbreviation = "CAR",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0085CA",
+					Light = "#7AEBFF"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#BFC0BF",
+						Jersey = "#0085CA",
+						Stripe = "#FFFFFF",
+						Pants = "#BFC0BF"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#0085CA",
+						Helmet = "#BFC0BF",
+						Jersey = "#FFFFFF",
+						Stripe = "#0085CA", 
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+		elseif (string.lower(teamName) == "steelers") then
+		-- Team: Auburn
+		return {
+			City = "Pittsburgh",
+			Name = "Steelers",
+			Abbreviation = "PIT",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Alternate = {
+					Main = "#FFB612",
+					Light = "#FFD667"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB612",
+						NumberStroke = "#000000",
+						Helmet = "#000000",
+						Jersey = "#000000",
+						Stripe = "#FFB612",
+						Pants = "#FFB612"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#FFB612",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFB612", 
+						Pants = "#FFB612"
+					}
+				}
+			}
+		}
+		elseif (string.lower(teamName) == "chiefs") then
+		-- Team: Auburn
+		return {
+			City = "Kansas City",
+			Name = "Chiefs",
+			Abbreviation = "KC",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E31837",
+					Light = "#FF7B8A"
+				},
+				Alternate = {
+					Main = "#FFB612",
+					Light = "#FFD667"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB612",
+						NumberStroke = "#000000",
+						Helmet = "#E31837",
+						Jersey = "#E31837",
+						Stripe = "#FFB81C",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#E31837", 
+						NumberStroke = "#FFB81C",
+						Helmet = "#E31837",
+						Jersey = "#FFFFFF",
+						Stripe = "#E31837", 
+						Pants = "#FFB612"
+					}
+				}
+			}
 		}
 	end
 	return nil
